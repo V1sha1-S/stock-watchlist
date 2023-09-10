@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Getting Started with Stock-Watchlist React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The above project is a web-based stock watchlist application that allows users to search for and track their favorite companies' stock information. Here's a brief description of its key components:
 
-## Available Scripts
+1. **Home Screen**:
 
-In the project directory, you can run:
+   The Home screen provides users with a search bar where they can enter the name of a company they want to search for. After searching, a list of matching companies is displayed,
+   including their stock symbols, names, and share prices. Users can also add these companies to their watchlist.
 
-### `npm start`
+4. **Watchlist Screen**:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+   The Watchlist screen displays a list of companies that the user has added to their watchlist. It shows the stock symbols, names, and share prices of the companies in the watchlist.
+   Users can remove companies from their watchlist from this screen.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+6. **Navbar**:
 
-### `npm test`
+   The Navbar provides navigation links for users to switch between the Home screen and the Watchlist screen.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+8. **Redux State Management**:
 
-### `npm run build`
+   The project utilizes Redux, a state management library, to manage the user's watchlist data. Redux stores information about the companies in the watchlist, ensuring that this data
+   persists even when the user navigates between screens or refreshes the page.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+11. **External API**:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    The application interacts with an external API (Alpha Vantage) to fetch stock-related data when a user searches for a company.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+14. **Local Storage**:
 
-### `npm run eject`
+    User watchlist data is stored in the browser's local storage, ensuring that it persists across sessions and page refreshes.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Overall, this project provides a user-friendly interface for tracking stock information and managing a personalized watchlist of companies. It leverages Redux for state management and integrates with an external API to fetch real-time stock data.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Setting up the project
+To set up the above project, follow these steps:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Install Node.js and npm**:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   If you don't have Node.js and npm installed on your system, download and install them from the official website: [Node.js Official Website](https://nodejs.org/)
 
-## Learn More
+2. **Download the Repository or Clone the Repository into a folder**:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   Open your terminal navigate to the folder and run the following command to install the **Node Modules**:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   npm install or npm i
+   ```
+   
+   This will install all the dependency `Node-Modules` in the app folder.
 
-### Code Splitting
+3. **Install Additional Packages**:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   Install the necessary dependencies (axios, react-redux and react-router-dom) by running the following command:
 
-### Analyzing the Bundle Size
+   ```bash
+   npm install axios react-redux
+               and
+   npm i react-router-dom
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+4. **Start the Development Server**:
 
-### Making a Progressive Web App
+   In the terminal, run the following command to start the development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   ```bash
+   npm start
+   ```
 
-### Advanced Configuration
+   This will open the project in your default web browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+5. **Testing**:
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    You can now interact with the project in your browser. Use the search bar on the Home screen to search for companies and add them to your watchlist.
