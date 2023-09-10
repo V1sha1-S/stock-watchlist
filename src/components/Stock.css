@@ -1,0 +1,95 @@
+.Home, .Watchlist{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+}
+  
+.text-field {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+  
+button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+  
+button:hover {
+    background-color: #0056b3;
+}
+  
+.main-list {
+    list-style-type: none;
+    padding: 0;
+}
+  
+.sub-list {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.sub-list button {
+    background-color: #28a745;
+    border: none;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+}
+  
+.sub-list button:hover {
+    background-color: #218838;
+}
+  
+.sub-list.heading {
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+.sub-list.heading span {
+    flex: 1;
+    text-align: center;
+}
+  
+.navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 10px;
+    
+}
+
+.nav-heading{
+    color: white;
+    display: flex;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link {
+    color: #fff; 
+    text-decoration: none;
+    padding: 5px 10px; 
+    margin: 0 5px; 
+    border-radius: 5px;
+    font-size: 25px;
+}
+  
+.link:hover {
+    background-color: #555;
+}
+  
